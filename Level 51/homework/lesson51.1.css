@@ -1,0 +1,39 @@
+#hovered-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#hovered-circle:hover{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 60%;
+    background-color: black;
+    color: antiquewhite;
+    animation-name: circle1;
+    animation-duration: 3s;
+}
+
+@keyframes circle1{
+    from{
+        transform: scale(0.5) translate(100px, 150px);
+    }
+
+    20%{
+        transform: scale(1) translate(100px, -150px);
+    }
+
+    55%{
+        transform: scale(2) translate(250px, -20px);
+    }
+
+    80%{
+        transform: scale(2) translate(400px, 200px);
+    }
+
+    to{
+        transform: scale(2) translate(550px, -10px);
+    }
+}

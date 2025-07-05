@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rye&display=swap');
+
+@font-face{
+    font-family: "fliegeMono";
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+    src: url('FliegeMono-ExtraLight.otf') format('opentype');
+}
+
+@font-face{
+    font-family: "fliegeMono";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url('FliegeMono-ExtraBold.otf') format('opentype');
+}
+
+#body{
+    font-family: "Farro";
+}
+
+
+#div1{
+    text-decoration: underline dotted #000000e1;
+}
+
+#div2{
+    text-decoration: none;
+}
+
+h1{
+    text-decoration: overline;
+}
+
+#span1{
+    text-decoration: line-through;
+}
+
+#span2{
+    text-decoration: underline overline;
+}
+
+.underlined{
+    text-decoration: dashed underline;
+}
+
+.warning{
+    text-decoration: wavy;
+}
+
+#nav1{
+    text-transform: uppercase;
+}
+
+#headings0{
+    text-shadow: 4px 2px hsla(49, 55%, 51%, 0.882);
+    font-family: "Farro";
+}
+
+#headings1{
+    text-shadow: 5px 5px hsla(247, 90%, 8%, 0.882);
+}
+
+#par{
+    text-shadow: 2px 0px hsla(0, 7%, 72%, 0.882);
+}
+
+.par1{
+    text-shadow: 4px 2px #8a1717e1;
+}
+
+#roboto_par{
+    font-family: "Roboto";
+}
+
+#h4{
+    font-family: "Roboto";
+}
+
+h1{
+    font-family: 'fliegeMono';
+}
+
+#spann{
+    font-family: 'fliegeMono';
+}
