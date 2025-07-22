@@ -1,59 +1,70 @@
-function sumNumbers() {
-  let sum = 0;
-  let i = 0;
+// შექმენით სია სადაც გექნებათ რიცხვები
+// ლუპის მეშვეობით გადაუარეთ ამ სიას და შეკრიბეთ ყველა რიცხვი სიაში(შეინახეთ ცვლადში),თუ ამ ცლადის მნიშნელობამ(სიაში მყოფი ელემენტების ჯამმა) გადააცილა 50-ს მაგ შემთხვევაში გაჩერდეს შეკრება
 
-  while (i <= 10) {
+let number = [5, 10, 15, 20, 30];
+
+let sum = 0;
+
+for (let i = 0; i < number.length; i++) {
+  sum += number[i];
+
+  if (sum > 50) {
+    break;
+  }
+}
+
+console.log("Sum:", sum);
+
+// შემქენით arrow function სადაც პარამეტრად გადასცემთ სიას. სიაში იქნება 10 ცალი სტრინგი.გამოიტანეთ მხოლოდ ისეთი სტრინგები რომელთა სიგრძე მეტი იქნება ხუთზე
+
+// გამოიყენეთ: arrow function,for loop,if,continue
+
+const arrowFunc = (str) => {
+  for (let i = 0; i < str.length; i++) {
+    if (str[i].length <= 5) {
+      continue;
+    }
+    console.log(str[i]);
+  }
+};
+
+const string = [
+  "Mercedes-Benz",
+  "BMW",
+  "Audi",
+  "Porsche",
+  "Lexus",
+  "Toyota",
+  "Jeep",
+  "Ford",
+  "Tesla",
+  "Nissan",
+];
+
+arrowFunc(string);
+
+// Print First 5 Even Numbers Using Arrow Function
+// Create an arrow function that finds and prints the first 5 even numbers starting from 1 using a for loop.
+
+// Use continue to skip odd numbers.
+
+// Use break once 5 even numbers are printed.
+
+const NumberFunc = () => {
+  let count = 0;
+
+  for (let i = 1; i <= 100; i++) {
     if (i % 2 !== 0) {
-      i++;
-      continue; 
-    sum += i;
-    i++;
+      continue;
+    }
+
+    console.log(i);
+    count++;
+
+    if (count === 5) {
+      break;
+    }
   }
+};
 
-  return sum;
-}
-
-console.log(sumNumbers()); 
-
-
-
-// საკლასო დავალება:
-
-// Day of the Week Message
-
-// Write a switch case that takes a number (1–7) and logs the corresponding day of the week (e.g., 1 = "Monday").
-function logDayOfWeek(dayNumber) {
-  switch (dayNumber) {
-    case 1:
-      console.log("Monday");
-      break;
-    case 2:
-      console.log("Tuesday");
-      break;
-    case 3:
-      console.log("Wednesday");
-      break;
-    case 4:
-      console.log("Thursday");
-      break;
-    case 5:
-      console.log("Friday");
-      break;
-    case 6:
-      console.log("Saturday");
-      break;
-    case 7:
-      console.log("Sunday");
-      break;
-    default:
-      console.log("Invalid day number (must be 1–7)");
-  }
-}
-
-logDayOfWeek(1); 
-logDayOfWeek(7); 
-logDayOfWeek(0); 
-
-
-
-
+NumberFunc();
